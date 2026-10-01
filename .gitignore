@@ -1,0 +1,115 @@
+﻿# Visual Studio / C# / .NET Framework 4.8
+
+# === Visual Studio IDE files ===
+.vs/
+*.suo
+*.v11.suo
+*.v12.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.pidb
+*.svclog
+*.scc
+
+# === Build output ===
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# === NuGet packages ===
+# Packages are restorable via: nuget restore Sales.sln
+# EXCEPTION: libs/System.Data.SQLite.dll is a manual reference and IS tracked in source control
+packages/
+*.nupkg
+*.snupkg
+.nuget/
+nuget.exe
+
+# === Debug symbols ===
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.cache
+*.ilk
+
+# === Test results ===
+TestResult.xml
+*.trx
+[Tt]est[Rr]esult*/
+
+# === Publish output ===
+*_i.c
+*_p.c
+*_h.h
+*.meta
+*.obj
+*.iobj
+*.pch
+*.ipdb
+publish/
+PublishScripts/
+
+# === Windows Installer ===
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# === SQLite database files ===
+# Database is auto-created at %AppData%\SalesApp\DataBase.db — never committed
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# === Application log and text files ===
+*.log
+*.txt
+!README.md
+
+# === Product / runtime images in build output ===
+# Source images in Posters/ ARE tracked (required by app)
+# Runtime product images in bin/ are NOT tracked
+Sales/bin/Debug/Images/
+Sales/bin/Release/Images/
+
+# === Backup files ===
+*.bak
+*.back
+*_backup*
+*_old*
+Backups/
+
+# === Temporary / scratch files ===
+*.orig
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === ReSharper ===
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# === Rider ===
+.idea/
+*.sln.iml

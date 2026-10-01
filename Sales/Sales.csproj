@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F43AF8B6-A4E0-48F0-B206-E06DECAC0CBC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sales</RootNamespace>
+    <AssemblyName>Sales</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.6.0.0\lib\net462\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=10.0.0.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.10.0.2\lib\net462\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>libs\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Formats.Nrbf, Version=10.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Formats.Nrbf.10.0.2\lib\net462\System.Formats.Nrbf.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata, Version=10.0.0.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.Metadata.10.0.2\lib\net462\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Extensions, Version=10.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Resources.Extensions.10.0.2\lib\net462\System.Resources.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseInitializer.cs" />
+    <Compile Include="Database\LegacySchemaMigration.cs" />
+    <Compile Include="Database\SqlExecutor.cs" />
+    <Compile Include="Database\DatabaseBootstrap.cs" />
+    <Compile Include="Database\Migrations\IMigration.cs" />
+    <Compile Include="Database\Migrations\MigrationRunner.cs" />
+    <Compile Include="Database\Migrations\Migration_001_ErrorLogTable.cs" />
+    <Compile Include="Database\Migrations\Migration_002_OrderTaxAmount.cs" />
+    <Compile Include="Database\Migrations\Migration_003_LegacyColumnsBatch1.cs" />
+    <Compile Include="Database\Schemas\ProductsSchema.cs" />
+    <Compile Include="Database\Schemas\OrdersSchema.cs" />
+    <Compile Include="Database\Schemas\UsersSchema.cs" />
+    <Compile Include="Database\Schemas\StockSchema.cs" />
+    <Compile Include="Database\Schemas\BarcodeSchema.cs" />
+    <Compile Include="Database\Schemas\AuditSchema.cs" />
+    <Compile Include="Database\Triggers\PaymentTriggers.cs" />
+    <Compile Include="Database\Triggers\PriceSyncTriggers.cs" />
+    <Compile Include="Utilities\InvoiceLineFormatter.cs" />
+    <Compile Include="Utilities\ProductRowMapper.cs" />
+    <Compile Include="Services\OrderLineSnapshotService.cs" />
+    <Compile Include="FirstTimeSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstTimeSetup.Designer.cs">
+      <DependentUpon>FirstTimeSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\SaleLine.cs" />
+    <Compile Include="Models\ProductUnitLookup.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Payment.cs" />
+    <Compile Include="Models\PurchaseDetailInput.cs" />
+    <Compile Include="Models\Purchase.cs" />
+    <Compile Include="Models\PurchaseDetail.cs" />
+    <Compile Include="Models\StockHistoryBatch.cs" />
+    <Compile Include="Models\StockHistoryBatchItem.cs" />
+    <Compile Include="Models\ErrorLogEntry.cs" />
+    <Compile Include="Models\Supplier.cs" />
+    <Compile Include="Models\StockHistory.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Repositories\CategoryRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
+    <Compile Include="Repositories\OrderReadRepository.cs" />
+    <Compile Include="Repositories\ErrorLogRepository.cs" />
+    <Compile Include="Repositories\CustomerRepository.cs" />
+    <Compile Include="Repositories\SupplierRepository.cs" />
+    <Compile Include="Repositories\AppSettingsRepository.cs" />
+    <Compile Include="Repositories\PaymentRepository.cs" />
+    <Compile Include="Repositories\StockHistoryRepository.cs" />
+    <Compile Include="Repositories\PurchaseRepository.cs" />
+    <Compile Include="Repositories\ProductUnitsRepository.cs" />
+    <Compile Include="Repositories\UnitsRepository.cs" />
+    <Compile Include="Repositories\StockBatchRepository.cs" />
+    <Compile Include="Repositories\PosHotkeysRepository.cs" />
+    <Compile Include="Utilities\Logger.cs" />
+    <Compile Include="Utilities\AppSettingsManager.cs" />
+    <Compile Include="Utilities\DashboardDataService.cs" />
+    <Compile Include="Utilities\PosInvoicePrinter.cs" />
+    <Compile Include="Utilities\ReportExportHelper.cs" />
+    <Compile Include="Utilities\ReportPdfExporter.cs" />
+    <Compile Include="Utilities\DataGridViewDateTimeFormatter.cs" />
+    <Compile Include="Utilities\DataGridViewNumberFormatter.cs" />
+    <Compile Include="Utilities\EnglishDigitInputFilter.cs" />
+    <Compile Include="Utilities\EnglishDigitTextRenderer.cs" />
+    <Compile Include="Utilities\SalesUiBootstrap.cs" />
+    <Compile Include="Utilities\NumericTextBoxHelper.cs" />
+    <Compile Include="Utilities\SalesNumberFormat.cs" />
+    <Compile Include="Utilities\DataGridViewExportHelper.cs" />
+    <Compile Include="Utilities\UiTheme.cs" />
+    <Compile Include="Utilities\MessageHelper.cs" />
+    <Compile Include="Utilities\OrderDiscountHelper.cs" />
+    <Compile Include="Utilities\ProductQuantityHelper.cs" />
+    <Compile Include="Validators\OrderValidator.cs" />
+    <Compile Include="Validators\ProductValidator.cs" />
+    <Compile Include="Validators\PaymentValidator.cs" />
+    <Compile Include="Validators\UserValidator.cs" />
+    <Compile Include="Utilities\AdminFormAccess.cs" />
+    <Compile Include="Services\ProductTypeHelper.cs" />
+    <Compile Include="Utilities\PasswordHasher.cs" />
+    <Compile Include="Utilities\SessionManager.cs" />
+    <Compile Include="Utilities\ValidationHelper.cs" />
+    <Compile Include="Services\SetupService.cs" />
+    <Compile Include="Services\StockService.cs" />
+    <Compile Include="Utilities\OrderPricingHelper.cs" />
+    <Compile Include="Utilities\UserActivityTracker.cs" />
+    <Compile Include="Models\OrderAuditLogEntry.cs" />
+    <Compile Include="Models\LoginAuditLogEntry.cs" />
+    <Compile Include="Repositories\OrderAuditLogRepository.cs" />
+    <Compile Include="Repositories\LoginAuditLogRepository.cs" />
+    <Compile Include="Repositories\LoginAttemptsRepository.cs" />
+    <Compile Include="Services\DailyBackupService.cs" />
+    <Compile Include="Services\LoginSecurityService.cs" />
+    <Compile Include="Services\SalesTransactionService.cs" />
+    <Compile Include="Services\ReportsDataService.cs" />
+    <Compile Include="Services\TransactionGuard.cs" />
+    <Compile Include="Services\BarcodePlatform\BarcodeContracts.cs" />
+    <Compile Include="Services\BarcodePlatform\IBarcodeProfile.cs" />
+    <Compile Include="Services\BarcodePlatform\IBarcodeDataStore.cs" />
+    <Compile Include="Services\BarcodePlatform\BarcodeProfileConfig.cs" />
+    <Compile Include="Services\BarcodePlatform\SimpleJson.cs" />
+    <Compile Include="Services\BarcodePlatform\BarcodeLookupContracts.cs" />
+    <Compile Include="Services\BarcodePlatform\BarcodeParsingContracts.cs" />
+    <Compile Include="Services\BarcodePlatform\BarcodeProfilesRepository.cs" />
+    <Compile Include="Services\BarcodePlatform\ProductRepositoryBarcodeDataStore.cs" />
+    <Compile Include="Services\BarcodePlatform\GeneralBarcodeProfile.cs" />
+    <Compile Include="Services\BarcodePlatform\WeightEan13BarcodeProfile.cs" />
+    <Compile Include="Services\BarcodePlatform\BarcodeResolverEngine.cs" />
+    <Compile Include="Services\BarcodePlatform\IQuantityResolverStrategy.cs" />
+    <Compile Include="Services\BarcodePlatform\Strategies\PriceEmbeddedQuantityStrategy.cs" />
+    <Compile Include="Services\BarcodePlatform\Pipeline\BarcodePipelineContracts.cs" />
+    <Compile Include="Services\BarcodePlatform\Pipeline\DefaultBarcodeResolvePipeline.cs" />
+    <Compile Include="Services\BarcodePlatform\Pipeline\Stages\ParseStage.cs" />
+    <Compile Include="Services\BarcodePlatform\Pipeline\Stages\WeightedLookupStage.cs" />
+    <Compile Include="Services\BarcodePlatform\Pipeline\Stages\WeightedQuantityStage.cs" />
+    <Compile Include="Services\BarcodePlatform\Pipeline\Stages\FinalMappingStage.cs" />
+    <Compile Include="Services\ProductDomains\ProductDomainConfig.cs" />
+    <Compile Include="Services\ProductUnits\ProductUnitHierarchyContracts.cs" />
+    <Compile Include="Services\ProductUnits\ProductUnitHierarchyService.cs" />
+    <Compile Include="Services\ProductUnits\ProductUnitHierarchySelfTest.cs" />
+    <Compile Include="Repositories\ProductDomainsRepository.cs" />
+    <Compile Include="Repositories\ProductUnitTransactionsRepository.cs" />
+    <Compile Include="Forms\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutUsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutUsForm.Designer.cs">
+      <DependentUpon>AboutUsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add_Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add_Products.Designer.cs">
+      <DependentUpon>Add_Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customers_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customers_List.Designer.cs">
+      <DependentUpon>Customers_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager_Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager_Customers.Designer.cs">
+      <DependentUpon>Manager_Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager_Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager_Orders.Designer.cs">
+      <DependentUpon>Manager_Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\POSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\POSForm.Designer.cs">
+      <DependentUpon>POSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BarcodeSetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BarcodeSetupForm.Designer.cs">
+      <DependentUpon>BarcodeSetupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PosHotkeysForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PosHotkeysForm.Designer.cs">
+      <DependentUpon>PosHotkeysForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductPickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductPickerForm.Designer.cs">
+      <DependentUpon>ProductPickerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductUnitsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductUnitsForm.Designer.cs">
+      <DependentUpon>ProductUnitsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReasonPromptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReasonPromptForm.Designer.cs">
+      <DependentUpon>ReasonPromptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddPaymentDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPaymentDialogForm.Designer.cs">
+      <DependentUpon>AddPaymentDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager_Suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager_Suppliers.Designer.cs">
+      <DependentUpon>Manager_Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager_Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager_Products.Designer.cs">
+      <DependentUpon>Manager_Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager_Categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager_Categories.Designer.cs">
+      <DependentUpon>Manager_Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search_Manager_Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Search_Manager_Orders.Designer.cs">
+      <DependentUpon>Search_Manager_Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager_Payments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager_Payments.Designer.cs">
+      <DependentUpon>Manager_Payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager_Users.Designer.cs">
+      <DependentUpon>Manager_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UnitsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UnitsForm.Designer.cs">
+      <DependentUpon>UnitsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchasesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchasesForm.Designer.cs">
+      <DependentUpon>PurchasesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Stock_History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Stock_History.Designer.cs">
+      <DependentUpon>Stock_History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OrderAuditLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OrderAuditLogForm.Designer.cs">
+      <DependentUpon>OrderAuditLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginAuditLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginAuditLogForm.Designer.cs">
+      <DependentUpon>LoginAuditLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdvancedSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdvancedSettingsForm.Designer.cs">
+      <DependentUpon>AdvancedSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ErrorLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ErrorLogForm.Designer.cs">
+      <DependentUpon>ErrorLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportsForm.Designer.cs">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomerPickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerPickerForm.Designer.cs">
+      <DependentUpon>CustomerPickerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FirstTimeSetup.resx">
+      <DependentUpon>FirstTimeSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutUsForm.resx">
+      <DependentUpon>AboutUsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add_Products.resx">
+      <DependentUpon>Add_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customers_List.resx">
+      <DependentUpon>Customers_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager_Categories.resx">
+      <DependentUpon>Manager_Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager_Customers.resx">
+      <DependentUpon>Manager_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager_Orders.resx">
+      <DependentUpon>Manager_Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\POSForm.resx">
+      <DependentUpon>POSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PosHotkeysForm.resx">
+      <DependentUpon>PosHotkeysForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager_Suppliers.resx">
+      <DependentUpon>Manager_Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager_Products.resx">
+      <DependentUpon>Manager_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductPickerForm.resx">
+      <DependentUpon>ProductPickerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductUnitsForm.resx">
+      <DependentUpon>ProductUnitsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchasesForm.resx">
+      <DependentUpon>PurchasesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search_Manager_Orders.resx">
+      <DependentUpon>Search_Manager_Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager_Payments.resx">
+      <DependentUpon>Manager_Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager_Users.resx">
+      <DependentUpon>Manager_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Stock_History.resx">
+      <DependentUpon>Stock_History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnitsForm.resx">
+      <DependentUpon>UnitsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Posters\lamp.png" />
+    <Content Include="Posters\pngegg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets" Condition="Exists('..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+
+       Other similar extension points exist, see Microsoft.Common.targets.
+
+  <Target Name="BeforeBuild">
+
+  </Target>
+
+  <Target Name="AfterBuild">
+
+  </Target>
+
+  -->
+</Project>
